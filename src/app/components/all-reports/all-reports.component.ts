@@ -13,7 +13,7 @@ export class AllReportsComponent implements OnInit {
   constructor(private spaceAPI : SpaceApiService) { }
 
   ngOnInit(): void {
-    // @ts-ignore
+    
     this.spaceAPI.getReportsAPI().subscribe(json => this.reports = json);
   }
 
